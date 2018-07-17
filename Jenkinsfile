@@ -14,6 +14,10 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm install'
+                sh 'pwd'
+                sh 'sleep 1'
+                sh 'uname'
+                
             }
         }
         stage('Test') {
